@@ -11,7 +11,7 @@ const tempMax = document.getElementById('temp_max')
 
 
 
-const getWeatherData = async (citgy) => {
+const getWeatherData = async (city) => {
     const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${api_key}&lang=pt_br`;
 
     const res = await fetch(apiURL);
