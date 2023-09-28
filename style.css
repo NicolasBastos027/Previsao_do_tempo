@@ -23,7 +23,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    gap: 0px;
+    margin-right: 10px;
     padding: 5px;
     align-items: center;
     
@@ -31,7 +31,7 @@ body{
 .menu{
     height: 30px;
     width: 30px;
-    margin-right: 60px;
+    margin-right: 350px;
 }
 .mundo{
     width: 60px;
