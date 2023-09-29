@@ -1,6 +1,7 @@
 const cityElement = document.getElementById("cidade");
 const api_key = 'ebc7bba7a7de0815ba6cb1ffa7250fb3';
 const tempElement = document.getElementById('temperatura');
+const celcius = "°C"
 const descElement = document.getElementById('descricao');
 const umidElement = document.getElementById('umidade');
 const botaoPesquisa = document.getElementById('btn') 
@@ -24,9 +25,10 @@ const getWeatherData = async (city) => {
 const showData = async (city) =>{
     const data = await getWeatherData(city);
     cityLocate.innerHTML = data.name;
-    tempElement.innerHTML = parseInt(data.main.temp);
+    tempElement.innerHTML = parseInt(data.main.temp) + (celcius);
     descElement.innerHTML = data.weather[0].description; 
     umidElement.innerHTML = parseInt(data.main.feels_like);
+    
 }
 
 function executaAPI(){
